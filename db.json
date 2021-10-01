@@ -3,21 +3,21 @@
     {
       "id": 1,
       "message": "Changed hard drive on workstation 005",
-      "atttention": false,
+      "attention": false,
       "date": "03-02-2019",
       "tech": "Sam Smith"
     },
     {
       "id": 2,
       "message": "Workstation 007 not posting",
-      "atttention": true,
+      "attention": true,
       "date": "03-02-2019",
       "tech": "John Doe"
     },
     {
       "id": 3,
       "message": "Changed memory on workstation 050",
-      "atttention": false,
+      "attention": false,
       "date": "03-02-2019",
       "tech": "Sara Wilson"
     }
@@ -37,11 +37,6 @@
       "id": 3,
       "firstName": "Sara",
       "lastName": "Wilson"
-    },
-    {
-      "firstName": "Igor",
-      "lastName": "Bočkaj",
-      "id": 4
     }
   ]
 }
