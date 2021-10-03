@@ -8,14 +8,14 @@ function Logs() {
   const dispatch = useDispatch();
   const log = useSelector((state) => state.log);
 
-  const { logs, loading } = log;
+  const { logs } = log;
 
   useEffect(() => {
     dispatch(getLogs());
     // eslint-disable-next-line
   }, []);
 
-  if (loading || logs === null) {
+  if (logs === null) {
     return <Preloader />;
   }
 
@@ -24,7 +24,7 @@ function Logs() {
       <li className="collection-header">
         <h4 className="center">System Logs</h4>
       </li>
-      {!loading && logs.length === 0 ? (
+      {logs.length === 0 ? (
         <p className="center">No logs to show...</p>
       ) : (
         logs.map((log) => <LogItem log={log} key={log.id} />)

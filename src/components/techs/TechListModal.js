@@ -7,7 +7,7 @@ function TechListModal() {
   const tech = useSelector((state) => state.tech);
   const dispatch = useDispatch();
 
-  const { techs, loading } = tech;
+  const { techs } = tech;
 
   useEffect(() => {
     dispatch(getTechs());
